@@ -1,0 +1,175 @@
+#kalendar {
+	border: 1px solid gray;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 6px 0 6px;
+	background:#fff;
+}
+#kalendar .prev, #kalendar .next {
+	width: 30px;
+	position: relative;
+	cursor:pointer;
+}
+#kalendar .year_wrap, #kalendar .month_wrap {
+	display: flex;
+	justify-content: space-around;
+}
+
+#kalendar .next,
+#kalendar .prev{
+	background-image: url('../../../../../../img/black_arrow.svg');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#kalendar .next{}
+#kalendar .prev{transform:rotate(180deg);}
+
+/*
+#kalendar .prev:before {
+	top: calc(50% - 3px);
+	rotate: -45deg;
+}
+#kalendar .prev:after{
+	top: calc(50% - -3px);
+	rotate: 45deg;
+}
+#kalendar .next{}
+#kalendar .next:before{
+	top: calc(50% - 3px);
+	rotate: 45deg;
+}
+#kalendar .next:after{
+	top: calc(50% - -3px);
+	rotate: -45deg;
+}
+*/
+/*
+#kalendar .prev:before,
+#kalendar .next:before{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	border-color: #333;
+	position: absolute;
+	top: calc(50% - 5px);
+	background: none;
+}
+#kalendar .prev:after, 
+#kalendar .next:after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 1px;
+	position: absolute;
+	background: #000;
+	top: calc(50% - 0px);
+}
+#kalendar .prev:before {
+	left: 0;
+	rotate: 225deg;
+}
+#kalendar .prev:after{}
+#kalendar .next:before{
+	right: 0;
+	rotate: 45deg;
+}
+#kalendar .next::after {
+	right: 0;
+}
+*/
+#kalendar .year_wrap {}
+#kalendar .year_wrap .year {
+	padding: 5px 0 5px;
+}
+#kalendar .year_wrap .prev{}
+#kalendar .year_wrap .next{}
+
+#kalendar .month_wrap {
+}
+#kalendar .month_wrap .month{
+	padding: 5px 0 5px;
+}
+#kalendar .month_wrap .prev{}
+#kalendar .month_wrap .next{}
+
+#kalendar .weeks_wrap {
+	width: 90%;
+	margin: 9px auto 10px;
+}
+#kalendar .weeks_wrap .day_names {
+	display: table;
+	width: 100%;
+
+}
+#kalendar .weeks_wrap .day_name{
+	display: table-cell;
+	text-align: center;
+}
+#kalendar .day_name.monday{}
+#kalendar .day_name.tuesday{}
+#kalendar .day_name.wednesday{}
+#kalendar .day_name.thursday{}
+#kalendar .day_name.friday{}
+#kalendar .day_name.saturday{color: #BE4646;}
+#kalendar .day_name.sunday{color: #BE4646;}
+
+#kalendar .weeks_wrap .weeks {
+	display: table;
+	width: 100%;
+}
+#kalendar .weeks_wrap .weeks .week{
+	display: table-row;
+}
+#kalendar .weeks_wrap .weeks .week .day{
+	display: table-cell;
+	text-align: center;
+	padding: 3px 0 2px;
+}
+#kalendar .day.day_exist{}
+#kalendar .day.event_exist{
+	position: relative;
+	cursor:pointer;
+}
+#kalendar .day.event_exist span{
+	position: relative; 
+	color: #fff;
+}
+#kalendar .day.event_exist::before {
+	display: block;
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	background: #BE4646;
+	top: calc(50% - 11px);
+	left: calc(50% - 13px);
+	border-radius: 13px;
+}
+#kalendar .day:nth-child(1){}
+#kalendar .day:nth-child(2){}
+#kalendar .day:nth-child(3){}
+#kalendar .day:nth-child(4){}
+#kalendar .day:nth-child(5){}
+#kalendar .day:nth-child(6){color: #BE4646;}
+#kalendar .day:nth-child(7){color: #BE4646;}
+#kalendar .day span{}
+
+/* темная темя  */
+body.dark_theme #kalendar .next,
+body.dark_theme #kalendar .prev{
+	background-image: url('../../../../../../img/white_arrow.svg');
+}
+
+body.dark_theme #kalendar{background:#000;}
+body.dark_theme #kalendar .prev:after,
+body.dark_theme #kalendar .next:after{
+	background: #fff;
+}
+body.dark_theme #kalendar .prev:before,
+body.dark_theme #kalendar .next:before{	
+	border-color: #fff;
+}

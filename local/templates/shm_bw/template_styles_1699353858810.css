@@ -1,0 +1,53 @@
+.kp-img-container img {
+float: left;
+width: 300px;
+height:auto;
+margin: 0px 10px 5px 0px;
+}
+.date_time {
+display: none !important;
+}
+
+@media screen and (max-width: 420px){
+.kp-img-container img {
+max-width: 100%;
+height:auto;
+margin: 0px 10px 5px 0px;
+}
+
+	.body {
+display:flex;
+flex-direction:column;
+}
+}
+
+
+.mailing__container {
+	display: grid;
+	justify-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.mailing__container input:focus{
+	outline: none;
+}
+.mailing__container .input-wrapper{
+	display: flex;
+	gap: 10px;
+	height: 62px;
+}
+.mailing__container .textInput{
+	width: 440px;
+}
+.mailing__container .submit_button{
+	color: #fff;
+	background: #ce5e3c;
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 1;
+	border-radius: 4px;
+	border: none;
+	transition: .2s;
+}

@@ -1,0 +1,62 @@
+.subscribe-edit .textInput {
+    border: none;
+    background: #fff;
+    height: 57px;
+	padding: 0px 0px 0px 20px;
+}
+.subscribe-edit .trigger-subscribe{
+	height: 57px;
+    line-height: 57px;
+    width: 200px;
+	cursor: pointer;
+}
+.subscribe-edit{
+    background-color: #f3f3f3;
+}
+.subscribe-edit .subscribe-message{
+    padding: 17px 18px 0;
+}
+.subscribe-edit h2{padding: 0 20px;}
+.subscribe_ststus{
+	font-size:16px;
+	width: 30%;
+}
+/*  попап  */
+.subscribe_popap{
+	position: fixed;
+	top:10%;
+	z-index: 10;
+	left: 0%;
+}
+.subscribe_popap .content{
+	background:none;
+	border-bottom:none;
+}
+.subscribe_popap .subscribe_popap_close{
+	display: block;
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	right: 62px;
+	top: 54px;
+	font-family: sans-serif;
+	color: #333;
+	font-size: 38px;
+	cursor: pointer;
+}
+.subscribe_popap_bg{
+	background: rgbA(12,12,12,0.3);
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	left: 0px;
+	top: 0;
+
+}
+@media screen and (max-width: 1024px) {
+	.subscribe_popap .subscribe_popap_close{
+		right: 17px;
+		top: 21px;
+	}
+}

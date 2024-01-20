@@ -1,0 +1,33 @@
+/* bottom menu*/
+
+ul.after_bottom-menu{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+}
+
+ul.after_bottom-menu li {
+	display:inline;
+	margin-left:20px;
+	margin-bottom: 8px;
+}
+
+ul.after_bottom-menu li a {
+	font-size: 14px;
+	color: #6A6A6A;
+	text-decoration: none;
+	text-shadow: 1px 1px 9px #000;
+	display:inline-block;
+}
+
+@media screen and (max-width: 768px) {
+
+	ul.after_bottom-menu {
+		display: flex;
+		flex-direction: column;
+	}
+	ul.after_bottom-menu li {
+	margin-left: 0px;
+}
+}

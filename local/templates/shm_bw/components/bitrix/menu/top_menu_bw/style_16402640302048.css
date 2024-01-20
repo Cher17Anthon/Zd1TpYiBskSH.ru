@@ -1,0 +1,92 @@
+/**Top menu**/
+.top_menu {
+	padding: 17px 0;
+}
+.top_menu *{
+	margin: 0;
+	padding: 0;
+/*	background: black;*/
+}
+.top_menu ul{text-align: right;}
+/*.top_menu ul li {
+	list-style: none;
+	display: inline;
+	margin: 0 0 0 15px;
+}
+.top_menu ul li a{text-decoration: none;}
+*/
+.top_menu li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 20px;
+}
+.top_menu li:first-of-type{
+	margin: 0;
+}
+.top_menu a{
+	text-decoration: none;
+/*	color: white;*/
+	font-size: 18px;
+}
+
+.top_menu #tickets_menu_item,
+.top_menu #store_menu_item,
+.top_menu #langs_menu_item,
+.top_menu #visually_impaired_menu_item
+{
+/*	background-repeat: no-repeat;
+	padding-bottom: 2px;*/
+}
+.icon_menu_item{
+	background-size: 18px contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/*светлая тема*/
+.top_menu #tickets_menu_item {
+	background-image: url('../../../../images/svg/black_tiket.svg');
+	 padding-left: 27px;
+/*	background-position: 0 0px;*/
+}
+.top_menu #store_menu_item {
+	background-image: url('../../../../images/svg/black_market.svg');
+	padding-left: 22px;
+/*	background-position: 0 3px;*/
+}
+.top_menu #visually_impaired_menu_item {
+	background-image: url('../../../../images/svg/black_font.svg');
+	width: 26px;
+	display: inline-block;
+	height: 17px;
+	background-position: 0 2px;
+}
+.top_menu #langs_menu_item {
+	background-image: url('../../../../images/svg/black_nav_up.svg');
+	padding-right: 21px;
+	background-position: right 60%;
+}
+
+/*темная тема*/
+
+.dark_theme .top_menu #tickets_menu_item {
+	background-image: url('../../../../images/svg/white_tiket.svg');
+}
+.dark_theme .top_menu #store_menu_item {
+	background-image: url('../../../../images/svg/white_market.svg');
+}
+.dark_theme .top_menu #visually_impaired_menu_item {
+	background-image: url('../../../../images/svg/white_font.svg');
+}
+.dark_theme .top_menu #langs_menu_item {
+	background-image: url('../../../../images/svg/white_nav_up.svg');
+}
+
+
+@media screen and (max-width: 768px) {
+	.top_menu ul li {
+		display: block;
+		text-align: left;
+		margin: 9px 0 0;
+	}
+}

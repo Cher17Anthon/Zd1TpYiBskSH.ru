@@ -1,0 +1,26 @@
+.slide-style-block {
+    width: auto !important;
+}
+
+.style-text-font-size {
+    font-size: 20px !important;
+}
+
+#ajax-items .item .body .heading3 a {
+    font-size: 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-style-block {
+        width: auto !important;
+        margin-right: 10px;
+    }
+
+    #ajax-items .item .body .heading3 a {
+        font-size: 10px !important;
+        margin-right: 10px;
+    }
+    .style-text-font-size {
+        font-size: 10px !important;
+    }
+}

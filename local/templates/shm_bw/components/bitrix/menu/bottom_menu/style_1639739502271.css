@@ -1,0 +1,18 @@
+/* bottom menu*/
+
+ul.bottom-menu{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+}
+
+ul.bottom-menu li {
+}
+
+ul.bottom-menu li a {
+	font-size: 14px;
+	color: #cfcfcf;
+	text-decoration: none;
+/*	text-shadow: 1px 1px 9px #000;*/
+}
